@@ -1,0 +1,5 @@
+QUANTITY=humidity_airtemperature_cloudiness
+FILENAME=hac.tim
+FILETYPE=1
+METHOD=1
+OPERAND=O

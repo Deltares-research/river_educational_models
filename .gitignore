@@ -1,0 +1,6 @@
+*.bat
+*.dia
+*_map.nc
+*_his.nc
+*_clm.nc
+*.cache

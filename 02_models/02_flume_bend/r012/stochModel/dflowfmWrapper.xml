@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blackBoxWrapperConfig xmlns="http://www.openda.org"
+                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                       xsi:schemaLocation="http://www.openda.org http://schemas.openda.org/blackBoxWrapperConfig.xsd">
+
+    <!-- declare all the used aliases, specify the prefix and suffix of an alias key in a variable  -->
+    <aliasDefinitions defaultKeyPrefix="%" defaultKeySuffix="%">
+        <alias key="exedir"/>
+        <alias key="instanceDir"/>
+        <alias key="templateDir"/>
+        <alias key="calibFactorFile"/>
+        <alias key="inputFile"/>
+        <alias key="netcdfoutput"/>
+        <alias key="numberNodes"/>
+    </aliasDefinitions>
+
+    <run>
+
+        <!-- for each model instance, the template directory will be cloned to create the instance directory -->
+        <initializeActionsUsingDirClone instanceDir="%instanceDir%%instanceNumber%" templateDir="%templateDir%"/>
+
+        <computeActions>
+            <action workingDirectory="%instanceDir%" linuxExe="%exedir%/submit_h7.sh" windowsExe="%exedir%/start_dimr.bat">
+                <arg>%inputFile%</arg> 
+                <arg>%numberNodes%</arg>
+                <arg>%netcdfoutput%</arg>
+                <checkOutput file="%netcdfoutput%"/>
+            </action>
+        </computeActions>
+		
+        <finalizeActions/>
+
+    </run>
+
+    <inputOutput>
+        <ioObject className="org.openda.model_dflowfm.DFlowFMCalibrationFactorFile">
+            <file>%calibFactorFile%</file>
+            <id>calibFactorFile</id>
+        </ioObject>
+        <ioObject className="org.openda.exchange.dataobjects.NetcdfDataObject">
+            <file>%netcdfoutput%</file>
+            <id>netcdfoutput</id>
+            <arg>true</arg>
+            <arg>false</arg>
+			<arg>stationDimensionVarName=station</arg>	
+            <arg>requiredExchangeItemId=o2.waterlevel</arg>
+        </ioObject>
+		
+    </inputOutput>
+
+</blackBoxWrapperConfig>

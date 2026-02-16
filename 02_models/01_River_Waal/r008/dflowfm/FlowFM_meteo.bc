@@ -1,0 +1,16 @@
+[General]
+    fileVersion           = 1.01                
+    fileType              = boundConds          
+
+[forcing]
+Name                            = global
+Function                        = timeseries
+timeInterpolation               = linear
+Quantity                        = time
+Unit                            = minutes since 1995-01-01 00:00:00
+Quantity                        = rainfall
+Unit                            = mm day
+0      600
+180.   600
+180.01 0
+9d9    0

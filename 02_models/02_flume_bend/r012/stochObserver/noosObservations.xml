@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<noosObserver xmlns:oda="http://www.openda.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openda.org http://www.openda.org/schemas/openDaApplication.xsd">
+
+    <!-- status can be "use", "validate" or "ignore" -->
+    <!-- Setting a standardDeviation is only useful if it differs for the stations -->
+	
+    <timeSeries status="use" location="o2" standardDeviation="0.00001"  minDateTime="200001010005"  maxDateTime="200001010010">
+          o2.waterlevels
+    </timeSeries>
+
+</noosObserver>

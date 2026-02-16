@@ -1,0 +1,22 @@
+[forcing]
+name              = SourceSink01
+function          = timeseries
+timeInterpolation = linear
+quantity          = time
+unit              = seconds since 1995-01-01 00:00:00
+quantity          = sourcesink_discharge
+unit              = m3/s
+0        10
+2592000  10
+
+[forcing]
+name              = SourceSink01
+function          = timeseries
+timeInterpolation = linear
+quantity          = time
+unit              = seconds since 1995-01-01 00:00:00
+quantity          = sourcesink_traceraDelta
+unit              = kg/m3
+0        30
+2592000  30
+

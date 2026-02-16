@@ -1,0 +1,16 @@
+[forcing]
+name              = global
+function          = timeseries
+timeInterpolation = linear
+vector            = windxy:eastward_wind,northward_wind
+quantity          = time
+unit              = seconds since 2000-01-01 00:00:00
+quantity          = eastward_wind
+unit              = m/s
+quantity          = northward_wind
+unit              = m/s
+0           20  0
+86400       20  0
+86460       0   0
+5999999940  0   0
+

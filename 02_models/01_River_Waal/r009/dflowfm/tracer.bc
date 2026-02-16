@@ -1,0 +1,27 @@
+[forcing]
+Name                            = Upstream_0001
+Function                        = timeseries
+Time-interpolation              = linear
+Quantity                        = time
+Unit                            = seconds since 1995-01-01 00:00:00
+Quantity                        = tracerbndcTR1
+Unit                            = -
+0        1
+2592000  1
+
+[forcing]
+Name                            = Upstream_0001
+Function                        = timeseries
+Time-interpolation              = linear
+Quantity                        = time
+Unit                            = seconds since 1995-01-01 00:00:00
+Quantity                        = tracerbnddTR1
+Unit                            = -
+0        1
+2592000  1
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+[General]
+    fileVersion           = 1.01                
+    fileType              = boundConds          
+
+[forcing]
+    name                  = Node001             
+    function              = timeseries          
+    timeInterpolation     = linear              
+    quantity              = time                
+    unit                  = minutes since 2000-01-01 00:00:00
+    quantity              = dischargebnd        
+    unit                  = m³/s
+    0 2700 
+    1440 2700
+    2880 7000
+    14400 7000
+
+[forcing]
+    name                  = Node002             
+    function              = timeseries          
+    timeInterpolation     = linear              
+    quantity              = time                
+    unit                  = minutes since 2000-01-01 00:00:00
+    quantity              = waterlevelbnd       
+    unit                  = m
+    0 3.5 
+    1440 3.5 
+    2880 8.0
+    14400 8.0
+

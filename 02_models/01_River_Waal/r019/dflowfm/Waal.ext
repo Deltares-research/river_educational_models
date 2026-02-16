@@ -1,0 +1,5 @@
+QUANTITY=bedrock_surface_elevation
+FILENAME=uplarc.sdu
+FILETYPE=4
+METHOD=2
+OPERAND=O

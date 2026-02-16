@@ -1,0 +1,10 @@
+[boundary] 
+quantity=dischargebnd 
+locationfile=Upstream.pli 
+forcingfile=bc_q0.bc 
+  
+[boundary] 
+quantity=waterlevelbnd 
+locationfile=Downstream.pli 
+forcingfile=bc_wL.bc 
+ 
