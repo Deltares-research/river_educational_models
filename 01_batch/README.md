@@ -81,7 +81,7 @@ Then press **Enter**.
 
 ## Optional: Run in Dry Mode
 
-Some scripts support a DryRun mode:
+Scripts support a DryRun mode:
 
 `./script_name.ps1 -DryRun`
 
@@ -93,7 +93,8 @@ This shows what would happen without modifying files.
 
 The scripts are designed to:
 
-- `clean_models.ps1`: Deletes all output folders and replaces batch files by empty file. 
-- `create_and_replace_scripts.ps1`: Substitutes empty files by batch files to the installation folder.  
+- `clean_models.ps1`: Deletes all output folders and replaces batch files by empty file. No input argument. 
+- `create_and_replace_scripts.ps1`: Substitutes empty files by batch files to the installation folder. Gets as input the path to your installation. E.g.:
+`.\create_and_replace_scripts.ps1 -software_path "c:\Program Files\Deltares\Delft3D FM Suite 2025.02 HMWQ"`
 
 ------------------------------------------------------------------------
