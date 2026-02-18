@@ -21,3 +21,4 @@
 * r020: Harmonic BC on top of linear trend (sea level rise).
 * r021: Salinity intrusion sigma layers. 
 * r022: Salinity intrusion z-sigma layers. 
+* r023: Infiltration.
