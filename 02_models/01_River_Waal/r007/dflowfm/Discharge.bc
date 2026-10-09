@@ -1,5 +1,5 @@
 [forcing]
-Name                            = Boundary01_0001
+Name                            = Upstream_0001
 Function                        = timeseries
 Time-interpolation              = linear
 Quantity                        = time

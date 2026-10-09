@@ -170,6 +170,7 @@ DtTrt                             = 60                                          
 
 [output]
 FouFile                           = fourier.fou
+FouUpdateStep                     = 1                                                                   # Fourier update step type: 0=every user time step, 1=every computational timestep, 2=same as history output.
 WaqInterval                       = 0                                                                   # Interval (in s) between DELWAQ file outputs
 Wrishp_crs                        = 0                                                                   # Write shape file for cross section
 Wrishp_weir                       = 0                                                                   # Write shape file for weirs
